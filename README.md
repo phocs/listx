@@ -1,6 +1,6 @@
 
 # listx
-It's subset of the Linux 's list implementation.
+Subset of the Linux 's list implementation.
 
 To use it, `#include <listx.h>"`.
 
@@ -58,6 +58,21 @@ void delete(mydata_t *olddata) {
 void replace(mydata_t *olddata, mydata_t *newdata) {
     list_replace(&olddata->node, &olddata->node);
 }
+```
+
+Install:
+--------------------------------------
+```
+mkdir build
+cd build
+cmake ..
+make install
+```
+
+Uninstall:
+--------------------------------------
+```
+make uninstall
 ```
 
 References:
